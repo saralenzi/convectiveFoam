@@ -1,0 +1,17 @@
+EXE_INC = \
+    -I/opt/openfoam4/src/TurbulenceModels/turbulenceModels/lnInclude \
+    -I/opt/openfoam4/src/TurbulenceModels/incompressible/lnInclude \
+    -I/opt/openfoam4/src/transportModels \
+    -I/opt/openfoam4/src/transportModels/incompressible/singlePhaseTransportModel \
+    -I/opt/openfoam4/src/finiteVolume/lnInclude \
+    -I/opt/openfoam4/src/meshTools/lnInclude \
+    -I/opt/openfoam4/src/sampling/lnInclude
+
+EXE_LIBS = \
+    -lturbulenceModels \
+    -lincompressibleTurbulenceModels \
+    -lincompressibleTransportModels \
+    -lfiniteVolume \
+    -lmeshTools \
+    -lfvOptions \
+    -lsampling
